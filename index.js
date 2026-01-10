@@ -1,15 +1,5 @@
-let words = ["tree",
-  "wind",
-  "fire",
-  "rock",
-  "moon",
-  "star",
-  "rain",
-  "snow",
-  "leaf",
-  "sand",
-  "wolf",
-  "bird"];
+const words = ["tree", "wind", "fire", "rock", "moon", "star", "rain", "snow", "leaf", "sand", "wolf", "bird", "lamp", "book", "gold", "milk", "fish", "door", "ring", "cake", "frog", "dust", "coin", "wine", "sock", "pine", "hall", "boot", "ship", "cave"];
+
 let secretWord = words[Math.floor(Math.random() * words.length)].split('').join('').toLowerCase();
 const maxGuesses = 10;
 let guesses = [];
@@ -79,3 +69,11 @@ function updateHistory() {
         historyList.appendChild(li);
     });
 }
+const restartButton = document.querySelector('.restart_button');
+restartButton.addEventListener('click', function() {
+    secretWord = words[Math.floor(Math.random() * words.length)].split('').join('').toLowerCase();
+    guesses = [];
+    gameOver = false;
+    guessInput.value = "";
+    updateHistory();
+});
