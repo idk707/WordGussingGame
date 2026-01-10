@@ -1,1 +1,1 @@
-# NumberGussingGame
+# Word Gussing Game

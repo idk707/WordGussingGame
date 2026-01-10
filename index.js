@@ -61,6 +61,7 @@ checkButton.addEventListener('click', function() {
 
     guessInput.value = "";
 });
+// Function to update guess history
 function updateHistory() {
     historyList.innerHTML = "";
     guesses.forEach(function(guess, index) {
