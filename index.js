@@ -55,6 +55,7 @@ checkButton.addEventListener('click', function() {
         return;
     } else if (guesses.length >= maxGuesses){
         alert(`Too many guesses! Game Over`);
+        alert(`The secret word was '${secretWord}'`);
         gameOver = true;
         return;
     }
