@@ -42,13 +42,6 @@ checkButton.addEventListener('click', function() {
     }else{
         alert("No letters correct.");
     }
-
-    if (userGuess === secretWord){
-        alert(`You got it! The word was '${secretWord}'`);
-        gameOver = true;
-        return;
-    }
-
     if (userGuess === secretWord){
         alert(`You got it! The word was '${secretWord}'`);
         gameOver = true;
